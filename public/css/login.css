@@ -1,0 +1,210 @@
+/* ------------------------------------------------------------------
+                          [Table of contents]
+        ***     01.  ==>   Root Variables And Font Family 
+        ***     02.  ==>   General Style   
+
+--------------------------------------------------------------------- */
+
+/* Root Variables */
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+}
+
+/* ------------------------------------------------------------------
+                    ***     General Style        ***
+--------------------------------------------------------------------- */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, hsl(34, 90%, 42%), #ffde25);
+  color: #333;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2rem;
+}
+
+p,
+div {
+  margin: 0;
+}
+
+li,
+ul,
+ol {
+  list-style: none;
+}
+
+select,
+button,
+button:focus,
+input,
+input:focus textarea,
+textarea:focus {
+  outline: none;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.form__title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 2.2rem;
+}
+
+.register__form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 30%;
+  background: #fff;
+  color: #333;
+  border-radius: 5px;
+  box-shadow: 1px 1px 15px 5px #afafaf27;
+  padding: 20px 10px;
+}
+
+.register__form > label {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 15px auto;
+  text-align: start;
+}
+
+.register__form > label > input {
+  background-color: #ffffff;
+  color: #9c9c9c;
+  border-radius: 5px;
+  box-shadow: 1px 1px 8px 5px #aaaaaa50;
+  height: 40px;
+  margin: 10px 0;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register__form > button {
+  width: 80%;
+  margin: 35px auto 10px auto;
+  color: #fff;
+  background-color: #ee7e34;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.register__form .error {
+  color: #c22727;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.title__home-page {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.new__login,
+.new__register {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.new__login > a,
+.new__register > a {
+  margin-left: 5px;
+  font-size: 0.9rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1300px) {
+  .register__form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    background: #fff;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px 5px #afafaf27;
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .register__form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    background: #fff;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px 5px #afafaf27;
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .register__form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    background: #fff;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px 5px #afafaf27;
+    padding: 20px 10px;
+  }
+
+  .form__title {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PL-Short News | Article</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav class="navbar">
+      <div class="container__navbar">
+        <a href="/">PL News</a>
+
+        <label for="search-input" class="container__search-input">
+          <input
+            type="search"
+            id="search-input"
+            class="search-input"
+            data-category=""
+            placeholder="Search..."
+          />
+        </label>
+
+        <div class="dropdown">
+          <button class="dropbtn">
+            Categories
+            <i class="fa fa-caret-down"></i>
+          </button>
+
+          <div class="dropdown-content">
+            <a class="item-category" href="#" data-category="all">all</a>
+            <a class="item-category" href="#" data-category="national"
+              >national</a
+            >
+            <a class="item-category" href="#" data-category="business"
+              >business</a
+            >
+            <a class="item-category" href="#" data-category="sports">sports</a>
+            <a class="item-category" href="#" data-category="world">world</a>
+            <a class="item-category" href="#" data-category="politics"
+              >politics</a
+            >
+            <a class="item-category" href="#" data-category="technology"
+              >technology</a
+            >
+            <a class="item-category" href="#" data-category="startup"
+              >startup</a
+            >
+            <a class="item-category" href="#" data-category="entertainment"
+              >entertainment</a
+            >
+            <a class="item-category" href="#" data-category="miscellaneous"
+              >miscellaneous</a
+            >
+            <a class="item-category" href="#" data-category="hatke">hatke</a>
+            <a class="item-category" href="#" data-category="science"
+              >science</a
+            >
+            <a class="item-category" href="#" data-category="automobile"
+              >automobile</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="news__body">
+      <div class="news__container"></div>
+    </section>
+    <!-- body -->
+
+    <section class="loading">
+      <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <h2 class="p">Loading....</h2>
+      </div>
+    </section>
+
+    <script src="js/function-dom.js" type="text/javascript"></script>
+    <script src="js/fetchData.js" type="text/javascript"></script>
+    <script src="js/dom.js" type="text/javascript"></script>
+  </body>
+</html>
